@@ -1,9 +1,11 @@
 function checkForSpam(message) {
-    const blacklistedWord1 = "spam";
-    const blacklistedWord2 = "sale";
-    const messageLowerCase = message.toLowerCase();
-    const result = messageLowerCase.includes(blacklistedWord1) || messageLowerCase.includes(blacklistedWord2)
-    return result
+  const blacklistedWord1 = "spam";
+  const blacklistedWord2 = "sale";
+  const messageLowerCase = message.toLowerCase();
+  const result =
+    messageLowerCase.includes(blacklistedWord1) ||
+    messageLowerCase.includes(blacklistedWord2);
+  return result;
 }
 
 console.log(checkForSpam("Latest technology news"));
